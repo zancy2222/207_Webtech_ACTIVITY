@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('library3.jpg') no-repeat center center fixed;
+    background-size: cover;
+    backdrop-filter: blur(2px); /* Apply blur to the background */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Send the background behind the content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100hv;
+    margin: 0;
+}
+
+.register-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    height: 500px;
+    text-align: center;
+    float:left;
+    margin-left: 600px;
+}
+
+#img1{
+    width: 100px;
+    margin-top: -10px;
+    float: right;
+      
+}
+
+h1 {
+    margin-bottom: 20px;
+    margin-top: -23px;
+    color: hsl(235, 81%, 19%);
+    font-family: "times new roman";
+    font-size: 300%; 
+    font-weight: 105px;
+}
+
+h4 {
+    color: gray;
+    font-family: "times new roman";
+    font-size: 110%; 
+}
+
+.input-group {
+    margin-bottom: 15px;
+    margin-right: 21px;
+}
+
+.name-inputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    gap: 10px;
+}
+
+.input-field {
+    width: 23%;
+    height: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.birthdate-inputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 10px; /* Add space between input fields */
+    margin-bottom: 10px;
+    height: 50px;
+}
+
+.input-field1 {
+    width: 28%; /* Adjust width for three inputs */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+}
+
+button {
+    background-color: hsl(235, 81%, 19%);;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #006BFF;
+}
+
+.signup-link a {
+    color: #5a9bd4;
+    text-decoration: none;
+}
+
+#sign3{
+    color: black;
+    font-family: "calibri";
+    font-size: 110%; 
+}
+
+#sign4{
+    color: #006BFF;
+    font-family: "calibri";
+    font-size: 110%; 
+}

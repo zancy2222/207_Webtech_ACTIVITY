@@ -1,0 +1,341 @@
+/* Basic resets */
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	body {
+		font-family: Arial, sans-serif;
+		line-height: 1.6;
+		background-color: #f4f4f4;
+		color: #333;
+	}
+
+/* Header section */
+	header {
+		background-color: #2e6da7; 
+		color: white;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	#logo1{
+		height: 80px;
+		width: 80px;
+		margin-left: 30px;
+	}
+
+	header h1 {
+		font-size: 30px;
+		margin-left: 220px;
+		text-align: center;
+		font-family: "times new roman";
+	}
+
+	.top-links a {
+		color: white;
+		text-decoration: none;
+		margin-left: 5px;
+		margin-right: 15px;
+		font-weight: bold;
+		
+	}
+
+	.top-links a:hover {
+		text-decoration: underline;
+	}
+	
+
+/* Search Section */
+	.search-bar {
+		background-image: url('library4.jpg'); /* Background image of library */
+		background-size: cover;
+		background-attachment: scroll;
+		padding: 60px 0;
+		text-align: center;
+		color: white;
+	}
+
+/* Flexbox wrapper to align the logo and text side by side */
+	.logo-text-wrapper {
+		display: flex;
+		align-items: center; /* Vertically aligns the items in the center */
+		justify-content: center; /* Centers the content horizontally */
+		margin-bottom: 20px;
+	}
+	
+	
+
+/* Adjust the margin for the logo */
+	#logo2 {
+		height: 150px;
+		width: 150px;
+		margin-left: 5px; /* Adds space between the logo and the text */
+		margin-top: 30px;
+	}
+
+/* Adjust the heading */
+	.search-bar h2 {
+		font-size: 40px;
+		margin-left: 100px; /* Remove bottom margin */
+		margin-top: -10px;
+		font-weight: 300;
+		font-family: calibri;
+		color: #035397;
+	}
+	
+	#search {
+		box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+	}
+	
+@media (max-width: 768px){
+	.searchask{
+		 width: 80%; /* Make it wider on smaller screens */
+        margin-left: 0; /* Center it */
+        margin-bottom: 20px; /* Bottom margin for spacing */
+		 border: none;
+		 align-items: center;
+		 border-radius: 10px;
+		 background-color: #FEF1C1;
+		 opacity: 0.6;/*background-color: rgba(255, 249, 233, 0.3);*/
+	}
+}
+	#ask{
+		text-align: center;
+		 margin-bottom: 20px;
+		 color: #2B2B24;
+		 font-weight: bold;
+		 font-size: 19px;
+	}
+
+/* Center the search container */
+	.search-container input {
+		padding: 15px;
+		width: 50%;
+		border: none;
+		border-radius: 5px;
+		margin-right: 10px;
+		display: inline-block; /* Ensures input stays inline */
+		
+	}
+
+	.search-button {
+		padding: 15px 30px;
+		background-color: #035397;
+		color: white;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+
+	.search-button:hover {
+		background-color: #042f53;
+	}
+
+	.search-options {
+		margin-top: 10px;
+	}
+
+	.search-options a {
+		color: #035397;
+		text-decoration: none;
+		margin-right: 10px;
+	}
+
+	.search-options a:hover {
+		text-decoration: underline;
+	}
+
+
+/* Info Section */
+	.info-section {
+		display: flex;
+		justify-content: space-between;
+		padding: 20px;
+		background-color: #fff;
+	}
+
+
+/* Featured Books Section */
+	.featured-books {
+		flex: 3; /* Makes this section take up 3/4 of the width */
+		margin-right: 20px;
+	}
+
+	.featured-books h3 {
+		color: #2e6da7;
+		text-align: center;
+		 margin-bottom: 10px;
+	}
+
+	/* Slider Styling */
+	.slider {
+		overflow: hidden;
+		width: 100%; /* Full width of the container */
+		position: relative;
+		height: 300px; /* Same as the image height */
+	}
+
+	.slider-container {
+		display: flex;
+		transition: transform 1s ease-in-out; /* Smooth transition */
+		animation: slide 40s infinite; /* Longer duration for slower transitions */
+		width: calc(100% + 30px); /* Adjust width to include margin spacing */
+	}
+
+	.slide {
+		min-width: calc(100% - 30px); /* Full width minus margin */
+		margin-right: 20px; /* Space between slides */
+		box-sizing: border-box; /* Include padding and border in element's total width and height */
+	}
+
+	.slide img {
+		width: 20%;
+		height: 300px;
+		
+	}
+
+	.book-info {
+		margin-left: 30px; /* Space between image and text */
+		margin-right: 50px;
+		display: flex;
+		flex-direction: column; /* Stack text vertically */
+		justify-content: center; /* Center the text vertically */
+		width: 20%;
+	}
+
+	.book-info h3{
+		color: #042f53;
+	}
+
+	@keyframes slide {
+		0% { transform: translateX(0); }
+		10% { transform: translateX(0); } /* Hold the first slide */
+		20% { transform: translateX(-100%); }
+		30% { transform: translateX(-100%); } /* Hold the second slide */
+		40% { transform: translateX(-200%); }
+		50% { transform: translateX(-200%); } /* Hold the third slide */
+		60% { transform: translateX(-300%); }
+		70% { transform: translateX(-300%); } /* Hold the fourth slide */
+		80% { transform: translateX(-400%); }
+		90% { transform: translateX(-400%); } /* Hold the fifth slide */
+		100% { transform: translateX(0); } /* Reset to the first slide */
+	}
+
+
+/* Library Info Section (Unchanged) */
+	.library-info-section {
+		display: flex;
+		flex-direction: column;
+		flex: 1; /* Keep the same size for Quicklinks and Library Hours */
+	}
+
+	.quick-links,
+	.library-info {
+		margin-bottom: 20px;
+	}
+
+	.quick-links ul {
+		list-style: none;
+		padding-left: 0;
+	}
+
+	.quick-links ul li a {
+		text-decoration: none;
+		color: #2e6da7;
+	}
+
+	.quick-links ul li a:hover {
+		text-decoration: underline;
+	}
+
+	.library-info {
+		text-align: left;
+		margin-left: 100px;
+		margin-right: 50px;
+		
+	}
+	
+	.library-info h4{
+		color: #035397;
+	}
+
+	.calendar {
+		margin-top: -245px; /* Space above the calendar */
+		margin-right: 30px; /* Space above the calendar */
+		background-color: #fff; /* White background for the calendar */
+		border: 1px solid #2e6da7; /* Border color */
+		border-radius: 10px; /* Rounded corners */
+		padding: 10px; /* Padding inside the calendar */
+		text-align: center; /* Center the text */
+		width: 250px; /* Set a fixed width for the calendar */
+		float: right; /* Float the calendar to the left */
+		
+	}
+
+	.calendar h3 {
+		color: #2e6da7; /* Header color */
+		margin-bottom: 10px; /* Space below the header */
+	}
+
+	.calendar-grid {
+		display: grid; /* Use grid layout */
+		grid-template-columns: repeat(7, 1fr); /* Seven columns for days of the week */
+		gap: 2px; /* Space between grid items */
+	}
+
+	.day {
+		font-weight: bold; /* Bold text for day names */
+		color: #2B2B24; /* Dark color for day names */
+	}
+
+	.date {
+		padding: 5px; /* Padding for date cells */
+		background-color: rgba(255, 249, 233, 0.3); /* Light background for dates */
+		border-radius: 5px; /* Rounded corners for date cells */
+		height: 30px; /* Fixed height for date cells */
+		line-height: 30px; /* Center text vertically */
+	}
+
+
+/* Services Section */
+	.services-section {
+		padding: 20px;
+		background-color: #fbb03b; /* Yellow as in the UPV design */
+		text-align: center;
+		margin-top: 20px;
+	}
+
+	.services-grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 20px;
+	}
+
+	.service a {
+		text-decoration: none;
+		color: #0066cc;
+		font-size: 18px;
+	}
+
+	.service a:hover {
+		text-decoration: underline;
+	}
+	
+
+/* Footer */
+	footer {
+		background-color: #2e6da7;
+		color: white;
+		text-align: center;
+		padding: 10px 0;
+		margin-top: 20px;
+	}
+
+	footer address {
+		font-style: normal;
+		margin-top: 10px;
+		color: #f0f0f0;
+	}
